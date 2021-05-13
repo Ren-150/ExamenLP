@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Document</title>
+</head>
+<body>
+    <header id="header1">
+        <div id="caja1">
+            <h2><i class="fa fa-cog" aria-hidden="true"></i>Post</h2>
+        </div>
+        <div id="caja2"></div>
+    </header>
+    <main id="cajagrande">
+        <aside id="aside1">
+            <div class="container">        
+                <input type="text" class="caja" id="tit" placeholder="Titulo" required>
+                <textarea name="desc" class="caja" id="desc" cols="30" rows="10" placeholder="Descripcion" required></textarea>
+                <button class="boton" onclick="agregar()">Agregar</button>
+            </div>
+        </aside>
+        <div id="caja3">
+            <div class="container max">
+                <table id="tabla">
+                    <thead>
+                        <tr>
+                            <th>Titulo</th>
+                            <th>Descripcion</th>
+                            <th>Accion</th>
+                        </tr>
+                    </thead>
+                        <tbody id="tbd"></tbody>
+                </table>
+            </div>
+        </div>
+        <script src="js/script.js"></script>
+</body>
+</html>
